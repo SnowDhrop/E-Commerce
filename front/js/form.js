@@ -107,8 +107,10 @@ document.getElementById("order").addEventListener('click', e =>{
                     let products = JSON.parse(localStorage.getItem("cart"));
                     let productsSend=[];
                     
-                    for (let i=0; i<products.length; i++){                       
-                        productsSend.push(products[i]._id);
+                    for (let i=0; i<products.length; i++){                
+                        for (let x=0; x<products[i].quantity; x++){
+                            productsSend.push(products[i]._id);
+                        }                   
                     }
 
 //                                                 Envoi de la requete + reception de l'orderId
