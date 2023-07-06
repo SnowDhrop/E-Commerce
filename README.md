@@ -1,5 +1,5 @@
 **Description**  
-Développement du front d'un site web qui vend des canapés.
+Développement d'un site web qui vend des canapés.
 
 **Langages**  
 - JS Natif
